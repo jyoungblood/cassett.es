@@ -1,0 +1,1121 @@
+---
+
+---
+
+<!doctype html>
+<html class="h-100">
+  <head>
+    <title>cassett.es</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tachyons@4.12.0/css/tachyons.css"
+    />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"> -->
+
+    <!-- <script src="./js/lib/jquery.min.js"></script> -->
+    <!-- <script src="//unpkg.com/alpinejs" defer></script> -->
+
+    <!-- <script src="./js/lib/instant.page.min.js"></script> -->
+    <!-- <script src="https://cdn.skypack.dev/@hotwired/turbo"></script> -->
+  </head>
+  <body class="bg-black">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">  -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,100;1,200&display=swap" rel="stylesheet">  -->
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .dot-goth {
+        font-family: "DotGothic16", sans-serif;
+      }
+
+      .font-plex {
+        font-family: "IBM Plex Mono", monospace;
+      }
+
+      .inconsolata {
+        font-family: "Inconsolata", monospace;
+      }
+
+      .scp-italic {
+        font-family: "Source Code Pro", monospace;
+      }
+
+      .fucshia {
+        color: #ff00f6;
+      }
+      .bg-fucshia {
+        background-color: #ff00f6;
+      }
+      .hover-bg-fucshia:hover {
+        background-color: #ff00f6;
+      }
+      .b--fucshia {
+        border-color: #ff00f6;
+      }
+
+      .hover-b--cyan:hover {
+        border-color: #42ffe2;
+      }
+      .hover-bg-cyan:hover {
+        background-color: #42ffe2;
+      }
+
+      .episode-list ul {
+        list-style: none;
+      }
+
+      .hover-no-underline:hover {
+        text-decoration: none;
+      }
+
+      /* SMALL */
+
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        .episode-title a {
+          background-color: black;
+        }
+
+        .song-list span {
+          background-color: black;
+          padding: 0.125rem;
+        }
+      }
+    </style>
+
+    <!-- dot-goth -->
+    <!-- font-plex -->
+
+    <div class="br bw1 b--fucshia fixed h-100" style="top: 0; right: 200px;">
+    </div>
+    <div class="br bw1 b--fucshia fixed h-100" style="top: 0; right: 400px;">
+    </div>
+
+    <div class="bb bw1 b--fucshia fixed w-100" style="top: 30%;"></div>
+    <div class="bb bw1 b--fucshia fixed w-100" style="top: 60%;"></div>
+    <div class="bb bw1 b--fucshia fixed w-100" style="top: 90%;"></div>
+
+    <img
+      style="z-index: 100"
+      class="fixed h-100-ns h-50 w-auto top-0 mt0-ns mt5 right-0 o-90"
+      src="./images/cassettes-outlines-white.png"
+    />
+
+    <div
+      class="ma5-ns ma3 white scp-italic relative pt0-ns pt4"
+      style="z-index: 3000;"
+    >
+      <a href="https://twitter.com/cassett_es" target="_blank"
+        ><img
+          class="w5-ns w4 mb6-ns mb5 hover-bg-fucshia"
+          src="./images/cassettes-tape-white.svg"
+        /></a
+      >
+      <!-- hover-b--cyan -->
+      <!-- bw1 br b--fucshia -->
+
+      <div class="episode-list hover-bg-fucshia mb5">
+        <div class="fw4-ns fw6 f2-ns f4 ttu mb3 i episode-title">
+          <a
+            class="white hover-black"
+            target="_blank"
+            href="https://cassett.es/episodes/20-daisy.mp3"
+            >S2E10 &mdash; daisy</a
+          >
+        </div>
+        <div class="f3-ns f7 fw3-ns fw4 i song-list">
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">01</span>
+            <span>Michael Penn - Daisy</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">02</span>
+            <span>David Bazan - Little Landslide</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">03</span>
+            <span>Burial - In McDonald's</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">04</span>
+            <span>AT.REI - Ambivalence</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">05</span>
+            <span>Vessel - Anima</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">06</span>
+            <span>Phox Unblushing - Laura (Oh, Girl)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">07</span>
+            <span>Set Fire To Flames - Fading Lights Are Fading</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="episode-list hover-bg-fucshia mb5">
+        <div class="fw4-ns fw6 f2-ns f4 ttu mb3 i episode-title">
+          <a
+            class="white hover-black"
+            target="_blank"
+            href="https://cassett.es/episodes/19-que-quiero.mp3"
+            >S2E9 &mdash; que quiero</a
+          >
+        </div>
+        <div class="f3-ns f7 fw3-ns fw4 i song-list">
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">01</span>
+            <span>Katy B - On A Mission (The End remix)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">02</span>
+            <span>The Nucc - Go Away</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">03</span>
+            <span>Wolf Alice - White Leather</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">04</span>
+            <span>Wye Oak - Glory</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">05</span>
+            <span>Andy Stott - Sleepless</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">06</span>
+            <span>Joseph Fraioli - Constellation Matrix</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">07</span>
+            <span>Arctic Monkeys - I Wanna Be Yours (slow)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">08</span>
+            <span>The Naked &amp; Famous - Golden Girl</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="episode-list hover-bg-fucshia mb5">
+        <div class="fw4-ns fw6 f2-ns f4 ttu mb3 i episode-title">
+          <a
+            class="white hover-black"
+            target="_blank"
+            href="https://cassett.es/episodes/18-nevermind-the-end.mp3"
+            >S2E8 &mdash; nevermind the end</a
+          >
+        </div>
+        <div class="f3-ns f7 fw3-ns fw4 i song-list">
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">01</span>
+            <span>Tei Shi - M&amp;Ms</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">02</span>
+            <span>Duster - Travelogue</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">03</span>
+            <span>Laurel - Fire Breather</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">04</span>
+            <span>Tei Shi - Nevermind The End (Saint Pepsi Remix)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">05</span>
+            <span>True Widow - Creeper</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">06</span>
+            <span>Alice Bowman - Waiting</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">07</span>
+            <span>Lykke Li - Get Some</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="episode-list hover-bg-fucshia mb5">
+        <div class="fw4-ns fw6 f2-ns f4 ttu mb3 i episode-title">
+          <a
+            class="white hover-black"
+            target="_blank"
+            href="https://cassett.es/episodes/17-red-eyes.mp3"
+            >S2E7 &mdash; red eyes</a
+          >
+        </div>
+        <div class="f3-ns f7 fw3-ns fw4 i song-list">
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">01</span>
+            <span>Starflyer 59 - Sundown</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">02</span>
+            <span>Jon Hopkins - Abandon Window</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">03</span>
+            <span>Warpaint - Biggy</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">04</span>
+            <span>Charlotte Gainsbourg - Trick Pony</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">05</span>
+            <span>Kali Uchis - Never Be Yours</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">06</span>
+            <span>Loretta's Flowers - Swearin</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">07</span>
+            <span>Bibio - Carbon Wulf</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">08</span>
+            <span>The War On Drugs - Red Eyes</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="episode-list hover-bg-fucshia mb5">
+        <div class="fw4-ns fw6 f2-ns f4 ttu mb3 i episode-title">
+          <a
+            class="white hover-black"
+            target="_blank"
+            href="https://cassett.es/episodes/16-smoke-cigarettes.mp3"
+            >S2E6 &mdash; smoke cigarettes</a
+          >
+        </div>
+        <div class="f3-ns f7 fw3-ns fw4 i song-list">
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">01</span>
+            <span>Slowride - Smoke Cigarettes</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">02</span>
+            <span>The Casket Girls - Day To Day</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">03</span>
+            <span>Ital Tek - Violet</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">04</span>
+            <span>Elite Gymnastics - We Fly High</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">05</span>
+            <span>EMA - Satellites</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">06</span>
+            <span>Heavenly Beat - Honest</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">07</span>
+            <span>Milosh - Slow Down</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="episode-list hover-bg-fucshia mb5">
+        <div class="fw4-ns fw6 f2-ns f4 ttu mb3 i episode-title">
+          <a
+            class="white hover-black"
+            target="_blank"
+            href="https://cassett.es/episodes/15-cortate-los-dientes.mp3"
+            >S2E5 &mdash; cortate los dientes</a
+          >
+        </div>
+        <div class="f3-ns f7 fw3-ns fw4 i song-list">
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">01</span>
+            <span>Sietta - Agree to Disagree</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">02</span>
+            <span>JJ - Africa to Malaga</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">03</span>
+            <span>Nils Frahm - Sol (Mohamad &amp; Friends Remix)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">04</span>
+            <span>Kyla La Grange - Cut Your Teeth</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">05</span>
+            <span>Teebs - View Point</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">06</span>
+            <span>Conor Oberst - NYC (Gone, Gone)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">07</span>
+            <span>Bibio - Lover's Carvings</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">08</span>
+            <span>The Bamboos / Megan Washington - The Wilhelm Scream</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">09</span>
+            <span>Betty Who - High Society</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="episode-list hover-bg-fucshia mb5">
+        <div class="fw4-ns fw6 f2-ns f4 ttu mb3 i episode-title">
+          <a
+            class="white hover-black"
+            target="_blank"
+            href="https://cassett.es/episodes/14-desfile-paranoide.mp3"
+            >S2E4 &mdash; desfile paranoide</a
+          >
+        </div>
+        <div class="f3-ns f7 fw3-ns fw4 i song-list">
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">01</span>
+            <span>Glass Animals - Psylla</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">02</span>
+            <span>Kinoko Teikoku - Paranoidoparedo</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">03</span>
+            <span>We Are Twin - The Way We Touch</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">04</span>
+            <span>Your Friend - Tame One</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">05</span>
+            <span>Lonnie Liston Smith - A Garden of Peace</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">06</span>
+            <span>DIIV - Follow</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="episode-list hover-bg-fucshia mb5">
+        <div class="fw4-ns fw6 f2-ns f4 ttu mb3 i episode-title">
+          <a
+            class="white hover-black"
+            target="_blank"
+            href="https://cassett.es/episodes/13-kiss-me-one-more-time.mp3"
+            >S2E3 &mdash; kiss me one more time</a
+          >
+        </div>
+        <div class="f3-ns f7 fw3-ns fw4 i song-list">
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">01</span>
+            <span>Denali - Everybody Knows</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">02</span>
+            <span>Be Forest - Lost Boy</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">03</span>
+            <span>Darkside - Paper Trails</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">04</span>
+            <span>My Jerusalem - Death Valley (Common Prayer Remix)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">05</span>
+            <span>Sex Snobs - Prologue</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">06</span>
+            <span>JLYY - Glass Drum</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">07</span>
+            <span>Daughter - Still</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="episode-list hover-bg-fucshia mb5">
+        <div class="fw4-ns fw6 f2-ns f4 ttu mb3 i episode-title">
+          <a
+            class="white hover-black"
+            target="_blank"
+            href="https://cassett.es/episodes/12-te-debo-nada.mp3"
+            >S2E2 &mdash; te debo nada</a
+          >
+        </div>
+        <div class="f3-ns f7 fw3-ns fw4 i song-list">
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">01</span>
+            <span>Kilo Kish - I.O.U.</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">02</span>
+            <span>MSMR - Dark Doo Wop</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">03</span>
+            <span>Chelsea Wolfe - Feral Love</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">04</span>
+            <span>Ghosts - On And On</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">05</span>
+            <span>Annika Zee - Make It Right</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">06</span>
+            <span>Phantogram - Nothing But Trouble</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">07</span>
+            <span>Fever Ray - If I Had A Heart</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">08</span>
+            <span>Meg Myers - Curbstomp</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">09</span>
+            <span>Son Lux - Break</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="episode-list hover-bg-fucshia mb5">
+        <div class="fw4-ns fw6 f2-ns f4 ttu mb3 i episode-title">
+          <a
+            class="white hover-black"
+            target="_blank"
+            href="https://cassett.es/episodes/11-sliders.mp3"
+            >S2E1 &mdash; sliders</a
+          >
+        </div>
+        <div class="f3-ns f7 fw3-ns fw4 i song-list">
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">01</span>
+            <span>Watercolours - Sliders</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">02</span>
+            <span>ESPRIT Fantasy - Summer Night</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">03</span>
+            <span>The Belle Game - Wait Up for You</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">04</span>
+            <span>Evenings - Alcyone</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">05</span>
+            <span>Alina Baraz / Galimatias - Pretty Thoughts</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">06</span>
+            <span>Jon Hopkins - Collider</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">07</span>
+            <span>Arboretus - A Suicide in Rome</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">08</span>
+            <span>Blonds - Talk Show Host</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">09</span>
+            <span>Balmorhea - Attesa</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="episode-list hover-bg-fucshia mb5">
+        <div class="fw4-ns fw6 f2-ns f4 ttu mb3 i episode-title">
+          <a
+            class="white hover-black"
+            target="_blank"
+            href="https://cassett.es/episodes/10-salt-of-the-earth.mp3"
+            >S1E10 &mdash; salt of the earth</a
+          >
+        </div>
+        <div class="f3-ns f7 fw3-ns fw4 i song-list">
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">01</span>
+            <span>Lovedrug - Salt of the Earth</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">02</span>
+            <span>The XX - Fantasy</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">03</span>
+            <span>Now Now - Shifting</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">04</span>
+            <span>The National Skyline - Day on the Beach</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">05</span>
+            <span>The Microphones - Instrumental (version)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">06</span>
+            <span>As Cities Burn - Timothy (outro)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="episode-list hover-bg-fucshia mb5">
+        <div class="fw4-ns fw6 f2-ns f4 ttu mb3 i episode-title">
+          <a
+            class="white hover-black"
+            target="_blank"
+            href="https://cassett.es/episodes/09-anyones-ghost.mp3"
+            >S1E9 &mdash; anyone's ghost</a
+          >
+        </div>
+        <div class="f3-ns f7 fw3-ns fw4 i song-list">
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">01</span>
+            <span>Saint Pepsi - Unhappy (Kodak Cameo remix)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">02</span>
+            <span>King of Spain - Basement Trails</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">03</span>
+            <span>Young Unknowns - I Want to Lose</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">04</span>
+            <span>Banks - Waiting Game</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">05</span>
+            <span>Four Tet - Unicorn</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">06</span>
+            <span>Tiger Tsunami - Waves</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">07</span>
+            <span>Bowery Electric - Looped</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">08</span>
+            <span>Silver Swans - Anyone's Ghost</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="episode-list hover-bg-fucshia mb5">
+        <div class="fw4-ns fw6 f2-ns f4 ttu mb3 i episode-title">
+          <a
+            class="white hover-black"
+            target="_blank"
+            href="https://cassett.es/episodes/08-strange-attraction.mp3"
+            >S1E8 &mdash; strange attraction</a
+          >
+        </div>
+        <div class="f3-ns f7 fw3-ns fw4 i song-list">
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">01</span>
+            <span>Deluxx Folk Implosion - Daddy Never Understood</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">02</span>
+            <span>Asaf Avidan - Turn</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">03</span>
+            <span>Nuns - I Don't Know Where I Stand</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">04</span>
+            <span>Chvrches - You Caught the Light</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">05</span>
+            <span>Diana - Strange Attraction</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">06</span>
+            <span>Widowspeak - Limbs</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">07</span>
+            <span>Pity Sex - Fold</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">08</span>
+            <span>Rae Morris - Grow</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="episode-list hover-bg-fucshia mb5">
+        <div class="fw4-ns fw6 f2-ns f4 ttu mb3 i episode-title">
+          <a
+            class="white hover-black"
+            target="_blank"
+            href="https://cassett.es/episodes/07-isola.mp3"
+            >S1E7 &mdash; isola</a
+          >
+        </div>
+        <div class="f3-ns f7 fw3-ns fw4 i song-list">
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">01</span>
+            <span>jj - die tonight</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">02</span>
+            <span>heartbeat(s) / angelina lucero - hocus pocus</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">03</span>
+            <span>morella's forest - pasty white</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">04</span>
+            <span>john murphy - mercury</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">05</span>
+            <span>now, now - prehistoric</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">06</span>
+            <span>big deal - swoon</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">07</span>
+            <span>the raveonettes - war in heaven</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">08</span>
+            <span>default genders - on fraternity</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">09</span>
+            <span>miho hatori - the river of three crossings</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">10</span>
+            <span>glish - sex</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">11</span>
+            <span>joy electric - starcadia</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="episode-list hover-bg-fucshia mb5">
+        <div class="fw4-ns fw6 f2-ns f4 ttu mb3 i episode-title">
+          <a
+            class="white hover-black"
+            target="_blank"
+            href="https://cassett.es/episodes/06-year-of-the-snake.mp3"
+            >S1E6 &mdash; year of the snake</a
+          >
+        </div>
+        <div class="f3-ns f7 fw3-ns fw4 i song-list">
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">01</span>
+            <span>gold panda - mountain</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">02</span>
+            <span>portico quartet - steepless</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">03</span>
+            <span>spazzkid - kokeshi doll</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">04</span>
+            <span
+              >alice coltrane - life force (live at the natural history museum)
+              (excerpt)</span
+            >
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">05</span>
+            <span>vilda ray - to write</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">06</span>
+            <span
+              >owsey - at the top of our hill, we could see the atlantic</span
+            >
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">07</span>
+            <span>flight facilities - clair de lune</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">08</span>
+            <span>flume - insane</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">09</span>
+            <span>unkle - the runaway</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">10</span>
+            <span>cliff martinez - your friends ain't gonna leave with you</span
+            >
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">11</span>
+            <span>matthew pop - lights out</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">12</span>
+            <span>900x - lovelife</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">13</span>
+            <span>dead girlfriends - stop pretending</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">14</span>
+            <span>festa d'estate - nags head nc (lalka sasai remix)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="episode-list hover-bg-fucshia mb5">
+        <div class="fw4-ns fw6 f2-ns f4 ttu mb3 i episode-title">
+          <a
+            class="white hover-black"
+            target="_blank"
+            href="https://cassett.es/episodes/05-mylar.mp3"
+            >S1E5 &mdash; mylar</a
+          >
+        </div>
+        <div class="f3-ns f7 fw3-ns fw4 i song-list">
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">01</span>
+            <span>The Kills - Black Balloon (Grand Thieves Remix)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">02</span>
+            <span>The Naked &amp; Famous - The Sun (Drunken Apaches Remix)</span
+            >
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">03</span>
+            <span>Cruel Black Dove - Love Song</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">04</span>
+            <span>Tweet - Oops (Falcons Remix)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">05</span>
+            <span>Gin Wigmore - Devil in Me</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">06</span>
+            <span>Ester Drang - White Lies (outro)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">07</span>
+            <span>Gallant - If It Hurts</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">08</span>
+            <span>Honey Bones - Dragg</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">09</span>
+            <span>Andrew Belle - Add It Up</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="episode-list hover-bg-fucshia mb5">
+        <div class="fw4-ns fw6 f2-ns f4 ttu mb3 i episode-title">
+          <a
+            class="white hover-black"
+            target="_blank"
+            href="https://cassett.es/episodes/04-zzyzx.mp3"
+            >S1E4 &mdash; zzyzx</a
+          >
+        </div>
+        <div class="f3-ns f7 fw3-ns fw4 i song-list">
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">01</span>
+            <span>Desert City Soundtrack - Drawn and Quartered</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">02</span>
+            <span>Partners - Plan Is No Plan</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">03</span>
+            <span>My Heart to Joy - Old Capitals</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">04</span>
+            <span>Sed Non Satiata - Osogo Oro</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">05</span>
+            <span>Denison Marrs - @ 35,000 Ft</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">06</span>
+            <span>Komarov - Valentina, Yevgeny, And Irina</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">07</span>
+            <span>Roadside Monument - Trophies for Optometry</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="episode-list hover-bg-fucshia mb5">
+        <div class="fw4-ns fw6 f2-ns f4 ttu mb3 i episode-title">
+          <a
+            class="white hover-black"
+            target="_blank"
+            href="https://cassett.es/episodes/03-catfish.mp3"
+            >S1E3 &mdash; catfish</a
+          >
+        </div>
+        <div class="f3-ns f7 fw3-ns fw4 i song-list">
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">01</span>
+            <span>Daughter - Landfill (Man Balloon Flight Remix)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">02</span>
+            <span>Kleerup - Until We Bleed (w/ Lykke Li)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">03</span>
+            <span>The Naked And Famous - Young Blood (White Sea Remix)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">04</span>
+            <span>oOoOO - Stay Here (ft ML)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">05</span>
+            <span>Hard Mix - Memories</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">06</span>
+            <span>Rihanna / Mikky Ekko - Stay (Them Jeans Remix)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">07</span>
+            <span>Maria McCown - Devil's Daughter</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">08</span>
+            <span>SZA - Aftermath</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">09</span>
+            <span>Rhye - Shed Some Blood</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">10</span>
+            <span>Clathrus - Bumrock Headfirst</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">11</span>
+            <span>Summer Swee-Singh / Miren Edelstein - With You, Friends</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="episode-list hover-bg-fucshia mb5">
+        <div class="fw4-ns fw6 f2-ns f4 ttu mb3 i episode-title">
+          <a
+            class="white hover-black"
+            target="_blank"
+            href="https://cassett.es/episodes/02-hungry-black-eels.mp3"
+            >S1E2 &mdash; hungry black eels</a
+          >
+        </div>
+        <div class="f3-ns f7 fw3-ns fw4 i song-list">
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">01</span>
+            <span>Noah Gundersen - Family</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">02</span>
+            <span>Crystal Castles - Lovers Who Uncover</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">03</span>
+            <span>David Bazan - A Blueprint Of Something Never Finished</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">04</span>
+            <span>Little Dragon - Twice</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">05</span>
+            <span>Brand New - Be Gone</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">06</span>
+            <span>Windowspeak - Harsh Realm </span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">07</span>
+            <span>Jessica Lee Mayfield - Kiss Me Again</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">08</span>
+            <span>Fleetwood Mac - Albatross</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">09</span>
+            <span>Health - Blasphemy</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">10</span>
+            <span>Windytan - Voice Over Laser</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="episode-list hover-bg-fucshia mb5">
+        <div class="fw4-ns fw6 f2-ns f4 ttu mb3 i episode-title">
+          <a
+            class="white hover-black"
+            target="_blank"
+            href="https://cassett.es/episodes/01-crystal-darkness.mp3"
+            >S1E1 &mdash; the crystal darkness</a
+          >
+        </div>
+        <div class="f3-ns f7 fw3-ns fw4 i song-list">
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">01</span>
+            <span>kitty - dead island</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">02</span>
+            <span>trails and ways - mtn tune (wallpaper remix)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">03</span>
+            <span>gold panda - casyam</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">04</span>
+            <span>pigeon - ultimatum (loam fields remix)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">05</span>
+            <span>daughter - youth (isolene remix)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">06</span>
+            <span>holy other - held (tim hecker remix)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">07</span>
+            <span>ben lucas boysen - 16 (excerpt)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">08</span>
+            <span>kilo kish - creepwave</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">09</span>
+            <span>xxyyxx - dmt</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">10</span>
+            <span>S.C.U.M. - summon the sound (christian aids remix)</span>
+          </div>
+          <div class="flex mb3 lh-title">
+            <span class="pr4-ns pr3">11</span>
+            <span>adam laiacano - tumblr activity (3 time zones)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- fixit colophon -->
+
+    <!-- future, links to twitter & podcast subscribe links, rss feed, mixcloud links, youtube links idk -->
+
+    <!-- 	https://twitter.com/cassett_es -->
+
+    <!-- 	https://itunes.apple.com/us/podcast/cassett.es/id598864835 -->
+
+    <!-- old blog: https://cassett-es.tumblr.com/ -->
+
+    <!-- podcast url needs to be /podcast -->
+
+    <!-- itunes cover art url: http://cassett.es/media/img/logo-itunes.jpg -->
+
+    <div class="ma5-ns ma3 pb0-ns pb4">
+      <!-- // we own the rights to the name / intellectual property (so we can sell merch) ,,, but none of the songs, obv. we shouldn't have to say they're the copyrighted work of the original artist (or record label or legal entity who actually OWNS the music) ... we just like the songs, man, get off my case -->
+
+      <span class="f7 scp-italic i bg-white black"
+        >CASSETT.ES is produced by <a class="black" href="https://jonathanyoungblood.com"
+          >J Youngblood</a
+        > for <a class="black" href="https://dvst.cc">DVST magazine</a> in association with <a class="black" href="https://hxgf.io">HXGF internet studio</a>.<br />All applicable
+        rights reserved.<br /></span
+      >
+
+      <!-- <a target="_blank" href="https://hxgf.io"
+        ><img
+          class="hover-bg-fucshia w4 mt4"
+          src="./images/hxgf-bug-white.svg?v=3"
+        /></a
+      >
+      <a
+        target="_blank"
+        class="f6 white"
+        href="https://github.com/hxgf/cassett.es">src</a
+      > -->
+    </div>
+  </body>
+</html>
